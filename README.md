@@ -10,19 +10,19 @@ Addon for blender that moves an object in the virtual 3d scene based on the actu
 ## Troubleshots
 
 * If you don't have/use a headset, the configuration of SteamVR needs to be hacked a bit:
-	- in file path\to\Steam\steamapps\common\SteamVR\drivers\null\resources\settings\defaultvr.vrsettings
-```
-"enable" : false,			-> change to true
-```
+	- in the file path\to\Steam\steamapps\common\SteamVR\drivers\null\resources\settings\defaultvr.vrsettings,
+	```
+	"enable" : false,			-> change to true
+	```
 
-	- in file path\to\Steam\steamapps\common\SteamVR\resources\settings\defaultvr.vrsettings
-```
-"steamvr": {
-  "requireHmd": true,			-> change to false
-  "activateMultipleDrivers": false,	-> change o true
-  "forcedDriver": ""			-> change to "null"
-  "enableHomeApp": true,		-> change to false
-```
+	- in the file path\to\Steam\steamapps\common\SteamVR\resources\settings\defaultvr.vrsettings,
+	```
+	"steamvr": {
+	  "requireHmd": true,			-> change to false
+	  "activateMultipleDrivers": false,	-> change o true
+	  "forcedDriver": ""			-> change to "null"
+	  "enableHomeApp": true,		-> change to false
+	```
 
 * For me pyopenvr works but the newer version of the library called pyopenxr doesn't.
 
