@@ -1,11 +1,19 @@
 # vive_tracker_blender_addon
 Addon for blender that moves an object in the virtual 3d scene based on the actual pose of a vive tracker in reality.
 
+![NodeTreeExample](panel_screenshot.png)
+
 ## Installation
 
 1. Setup SteamVR so that the vive tracker is recognized and tracked. At least one lighthouse is required.
 
 2. Install [OpenVR](https://github.com/cmbruns/pyopenvr "openvr library on github") for the version of python that is shipped with blender (which is probably not your main python installation).
+
+## Use
+
+Once installed, the addon provides a new panel in the sidebar on the right of the viewport (open with "n").
+To make it work, select an object in the field "Apply Pose to:", then click on "Click to start OpenVR", and finally start the animation playback (space).
+At this point the selected object will move in blender like the vive tracker does in reality.
 
 ## Troubleshots
 
